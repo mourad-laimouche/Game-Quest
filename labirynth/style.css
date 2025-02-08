@@ -1,0 +1,178 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #222;
+  }
+  
+  #container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  
+  #maze {
+	position: absolute;
+	width: 340px;
+	height: 240px;
+	top: 30vh;
+	left: 50%;
+	transform: translateX(-50%);
+
+
+  }
+  
+  .mbox,
+  .controls {
+	height: 100%;
+	background: #222;
+	display: grid;
+  }
+  
+  .buttons {
+	width: 210px;
+	height: 140px;
+	background: #222;
+	align-self: center;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: 70px 70px;
+	grid-template-columns: 70px 70px 70px;
+  }
+  
+  .btn {
+	width: 60px;
+	height: 60px;
+	border: 2px #ffffff solid;
+	align-self: center;
+	justify-self: center;
+	cursor: pointer;
+	border-radius: 8px;
+	display: grid;
+  }
+  
+  .chevron {
+	height: 20px;
+	width: 20px;
+	align-self: center;
+	justify-self: center;
+	color: #fff;
+	font-size: 20px;
+  }
+  
+  #bu {
+	grid-column-start: 2;
+  }
+  
+  #bd {
+	grid-column-start: 2;
+	grid-row-start: 2;
+  }
+  
+  #bl {
+	grid-column-start: 1;
+	grid-row-start: 2;
+  }
+  
+  #br {
+	grid-column-start: 3;
+	grid-row-start: 2;
+  }
+  
+  #thingie,
+  #home {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+  }
+  
+  .emo {
+	position: absolute;
+	top: 4px;
+	left: 1px;
+	width: 13px;
+	height: 13px;
+	font-size: 15px;
+	line-height: 13px;
+	text-align: center;
+  }
+  
+  .barrier {
+	position: absolute;
+	background-color: #fff;
+  }
+  
+  #top {
+	top: 20px;
+	left: 20px;
+	width: 300px;
+	height: 2px;
+  }
+  
+  #bottom {
+	top: 220px;
+	left: 20px;
+	width: 302px;
+	height: 2px;
+  }
+  
+  button {
+	display: inline-block;
+	border: none;
+	padding: none;
+	margin: 0;
+	outline: none;
+	background-color: grey;
+	-webkit-tap-highlight-color: transparent;
+  }
+  
+  button:focus {
+	outline: none;
+  }
+  
+  .FKN {
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 60px;
+	background-color: rgb(177, 156, 33);
+	border: 2px solid rgb(177, 156, 33);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	box-shadow: 0 .5em 1em -0.2em black;
+	transition: all 0.3s ease;
+  }
+  
+  .FKN:hover {
+	background-color: rgb(150, 130, 100);
+  }
+  
+  .FKN .front {
+	color: white;
+	font-size: 1.2rem;
+	font-weight: 600;
+  }
+  
+  .FKN:active {
+	transform: scale(0.95);
+  }
+  
+  audio {
+	display: none;
+  }
+  
